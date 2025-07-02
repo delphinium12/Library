@@ -7,9 +7,14 @@ gnblis.forEach((item, idx) => {
         sublis.forEach((itemSub) => {
             itemSub.classList.remove('on');
         });
-
         sublis[idx].classList.add('on');
         item.classList.add('on');
+    });
+
+    gnblis.forEach((item, idx) => {
+        item.addEventListener('mouseleave', (e) => {
+            item.classList.remove('on');
+        });
     });
 
     header.addEventListener('mouseleave', (e) => {
