@@ -46,7 +46,7 @@
     transition: 0.3s;
     opacity: 0;
 }
-#header .nav .gnb li:hover::before {
+#header .nav .gnb li.on::before {
     opacity: 1;
 }
 
